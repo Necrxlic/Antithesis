@@ -562,7 +562,7 @@
                 <p style="font-weight: 999; font-size: larger;">contatos</p>
                 <p>se quiser falar com noize<br> <br>
                     <a style="cursor: pointer;"
-                        onclick="window.location.href='https://www.instagram.com/nohopeforjay'">líder do clube</a>
+                        onclick="window.location.href='https://www.instagram.com/nohopeforjay', '_blank'">líder do clube</a>
                     <br> <br>
                     <a style="cursor: pointer;"
                         onclick="window.open('https://instagram.com/antitese.cb', '_blank')">instagram do
@@ -574,7 +574,7 @@
             </div>
         </div>
 
-        <!-- RODAPÉ DISCRETO -->
+       
         <div <p>criação sem molde, expressão sem filtro, cultura reinterpretada e pensamentos que não se acomodam no
             comum. <br> © 2026, todos os direitos reservados: <a
                 style="cursor: pointer; font-weight: 999; font-size: larger;" class="about-us"
@@ -583,7 +583,7 @@
     </div>
 
     <script>
-        // GLITCH INTERATIVO
+        
         document.querySelectorAll('.glitch-hover').forEach(el => {
             el.addEventListener('mouseenter', () => {
                 el.style.animationPlayState = 'running';
@@ -593,7 +593,7 @@
             });
         });
 
-        // SCROLL REVEAL SUJO
+      
         window.addEventListener('scroll', () => {
             document.querySelectorAll('.spread > *').forEach((el, i) => {
                 const rect = el.getBoundingClientRect();
@@ -603,7 +603,7 @@
             });
         });
 
-        // MOUSE DISTORÇÃO
+       
         document.addEventListener('mousemove', (e) => {
             const x = (e.clientX / window.innerWidth) * 10;
             const y = (e.clientY / window.innerHeight) * 10;
@@ -612,7 +612,7 @@
             document.body.style.setProperty('--mouse-y', `${y}px`);
         });
 
-        // EFEITO DE PARALAX LEVE NOS BLOCOS
+      
         const blocks = document.querySelectorAll('.manifesto, .origem, .projetos, .filosofia, .frase');
         window.addEventListener('scroll', () => {
             const scrolled = window.pageYOffset;
@@ -625,7 +625,7 @@
             });
         });
 
-        // GLITCH EM HOVER PARA CARDS
+       
         document.querySelectorAll('.projeto-card').forEach(card => {
             card.addEventListener('mouseenter', () => {
                 card.style.filter = 'contrast(1.4) hue-rotate(2deg)';
@@ -637,7 +637,7 @@
             });
         });
 
-        // DISTORÇÃO NO LOGO
+        
         const logo = document.querySelector('.logo');
         logo.addEventListener('mousemove', (e) => {
             const rect = logo.getBoundingClientRect();
@@ -651,21 +651,21 @@
             logo.style.transform = 'perspective(500px) rotateX(0) rotateY(0) scale(1)';
         });
 
-        // EFEITO DE "PÁGINA VIRANDO" NO SCROLL
+        
         let lastScroll = 0;
         window.addEventListener('scroll', () => {
             const currentScroll = window.pageYOffset;
             if (currentScroll > lastScroll) {
-                // Scroll down - efeito de página
+                
                 document.body.style.backgroundPosition = `${currentScroll * 0.1}px ${currentScroll * 0.05}px`;
             }
             lastScroll = currentScroll;
         });
 
-        // PRELOAD ANIMAÇÕES
+        
         window.addEventListener('load', () => {
             document.body.classList.add('loaded');
-            // Logo glitch imediato
+            
             const logo = document.querySelector('.logo');
             logo.style.animation = 'glitch 0.6s ease-in-out';
         });    </script>
